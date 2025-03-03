@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+}
+
+body {
+    background-image: url(./stars.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30vh;
+    color: white;
+}
+
+svg {
+    width: 30px;
+}
+
+/* #weather-box {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+#search {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-self: stretch;
+}
+
+#search .convert {
+    margin-left: 3vw;
+    margin-right: 30vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.4rem;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle.active {
+    display: block;
+}
+
+#search input {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+#search button {
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) 150px;
+}
+
+.address {
+    font-size: 2rem;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.temperature {
+    font-size: 14rem;
+    grid-row: 2 / 3;
+    display: flex;
+}
+
+.temperature sup {
+    font-size: 40px;
+}
+
+.extras {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+.conditions {
+    grid-row: 5 / 6;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+#loading {
+    display: none;
+}
+
+#loading svg {
+    width: 20vw;
+}
